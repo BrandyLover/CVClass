@@ -1,10 +1,8 @@
 import numpy as np 
 from matplotlib import pyplot as plt
-import cv2 
+import cv2 as cv
 
-img = cv2.imread("H:\\GitHub\\CVClass\\Images\\colorida.jpg")
-    
-
-plt.hist(img.ravel(), 256, [0,256])
-cv2.imshow("Imagem", img)
+img = cv.imread("~//Github//CVStudy//Images//Cinza.jpg")
+plt.hist(np.ravel(img), 256, [0,256])
 plt.show()
+cv.imshow("Teste", img)
